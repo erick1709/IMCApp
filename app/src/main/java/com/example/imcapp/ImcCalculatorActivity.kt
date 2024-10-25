@@ -16,9 +16,6 @@ class ImcCalculatorActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        initComponents()
-        initListeners()
-        initUI()
         enableEdgeToEdge()
         setContentView(R.layout.activity_imc_calculator)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
@@ -26,6 +23,10 @@ class ImcCalculatorActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        initComponents()
+        initListeners()
+        initUI()
     }
 
     private fun initUI() {

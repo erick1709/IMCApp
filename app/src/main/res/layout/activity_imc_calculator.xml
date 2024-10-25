@@ -36,7 +36,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                tools:text="@string/male"
+                android:text="@string/male"
+                android:textStyle="bold"
                 android:textAllCaps="true"
                 android:textColor="@color/title_text"
                 />
@@ -70,7 +71,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                tools:text="@string/female"
+                android:text="@string/female"
+                android:textStyle="bold"
                 android:textAllCaps="true"
                 android:textColor="@color/title_text"
                 />
@@ -94,21 +96,37 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:gravity="center">
+            android:gravity="center"
+            android:layout_margin="16dp">
 
-            <ImageView
-                android:layout_width="75dp"
-                android:layout_height="75dp"
-                android:src="@drawable/ic_female"
-                app:tint="@color/white" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                tools:text="@string/female"
+                android:text="@string/altura"
                 android:textAllCaps="true"
                 android:textColor="@color/title_text"
                 />
+
+            <TextView
+                android:id="@+id/tvHeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_120_cm"
+                android:textSize="38sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                />
+
+            <com.google.android.material.slider.RangeSlider
+                android:id="@+id/rsHeight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/height"
+                android:stepSize="1"
+                android:valueFrom="120"
+                android:valueTo="200"/>
+
+
 
         </LinearLayout>
 
