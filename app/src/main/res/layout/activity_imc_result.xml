@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ImcResultActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ImcResultActivity"
+    android:paddingHorizontal="16dp"
+    android:paddingVertical="32dp"
+    android:background="@color/bg_app">
+
+    <TextView
+        android:id="@+id/textTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tu_resultado"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/viewResultado"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="@color/bg_comp_sel"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintTop_toBottomOf="@id/textTitulo">
+
+        <LinearLayout
+            android:id="@+id/llResultado"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvResultado"
+                android:layout_marginTop="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sobrepeso"
+                android:textColor="@color/no_optimo"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/tvNumImc"
+                android:layout_width="match_parent"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:layout_height="200dp"
+                android:text="@string/valorImc"
+                android:textColor="@color/white"
+                android:textSize="75sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvDescripcion"
+                android:layout_width="match_parent"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:textAlignment="viewStart"
+                android:layout_height="200dp"
+                android:text="@string/descripcionImc"
+                android:textColor="@color/white"
+                android:textSize="30sp"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnRecalcular"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@color/bg_fab"
+        android:text="@string/re_calcular"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="20sp"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

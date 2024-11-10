@@ -5,4 +5,12 @@
     <string name="altura">altura</string>
     <string name="_120_cm">120 cm</string>
     <string name="height">height</string>
+    <string name="peso">peso</string>
+    <string name="edad">edad</string>
+    <string name="calcular">Calcular</string>
+    <string name="tu_resultado">Tu resultado</string>
+    <string name="sobrepeso">Sobrepeso</string>
+    <string name="valorImc">27.46</string>
+    <string name="descripcionImc">Estás por encima de lo óptimo para tu peso y altura.</string>
+    <string name="re_calcular">re-calcular</string>
 </resources>
