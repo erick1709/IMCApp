@@ -42,7 +42,7 @@
                 android:layout_marginTop="40dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/sobrepeso"
+                android:text="@string/resultadoSobrepeso"
                 android:textColor="@color/no_optimo"
                 android:textStyle="bold"
                 android:textSize="30sp"
@@ -66,7 +66,7 @@
                 android:layout_marginEnd="15dp"
                 android:textAlignment="viewStart"
                 android:layout_height="200dp"
-                android:text="@string/descripcionImc"
+                android:text="@string/descripcionSobrepeso"
                 android:textColor="@color/white"
                 android:textSize="30sp"/>
 

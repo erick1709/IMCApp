@@ -32,6 +32,9 @@ class ImcCalculatorActivity : AppCompatActivity() {
     private lateinit var addEdad: FloatingActionButton
     private lateinit var redEdad: FloatingActionButton
     private lateinit var btnCalcular: AppCompatButton
+    companion object{
+        const val IMC_KEY="RESULT"
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -93,7 +96,7 @@ class ImcCalculatorActivity : AppCompatActivity() {
     private fun navigate2result(imc: Double)
     {
         val intentGA = Intent(this,ImcResultActivity::class.java)
-        intentGA.putExtra("resultadoIMC", imc)
+        intentGA.putExtra("IMC_KEY", imc)
         startActivity(intentGA)
     }
 

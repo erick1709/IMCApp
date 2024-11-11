@@ -9,8 +9,14 @@
     <string name="edad">edad</string>
     <string name="calcular">Calcular</string>
     <string name="tu_resultado">Tu resultado</string>
-    <string name="sobrepeso">Sobrepeso</string>
+    <string name="resultadoSobrepeso">Sobrepeso</string>
+    <string name="resultadoInferior">Delgadez</string>
+    <string name="descripcionInferior">Estás por debajo de lo óptimo para tu peso y altura.</string>
+    <string name="resultadoOptimo">Óptimo</string>
+    <string name="descripcionOptimo">Tu IMC se encuentra en el rango recomendable para tu peso y altura.</string>
+    <string name="resultadoObesidad">Obesidad</string>
+    <string name="descripcionObesidad">Estás bastante por encima de lo óptimo para tu peso y altura.</string>
     <string name="valorImc">27.46</string>
-    <string name="descripcionImc">Estás por encima de lo óptimo para tu peso y altura.</string>
+    <string name="descripcionSobrepeso">Estás por encima de lo óptimo para tu peso y altura.</string>
     <string name="re_calcular">re-calcular</string>
 </resources>
